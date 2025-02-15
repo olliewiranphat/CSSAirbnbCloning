@@ -1,0 +1,450 @@
+* {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    /* ให้ body ไร้ขอบ */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* สร้างแถบดำบนสุดของหน้าจอเว็บ */
+aside {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside>a {
+    color: white;
+}
+
+/* สร้างส่วน Header ใส่ข้อมูลแนะนำและ nav */
+header {
+    /* background-color: red; */
+    height: 725px;
+
+    /* ใส่รูปภาพพื้นหลัง */
+    background-image: url(https://a0.muscache.com/im/pictures/cf39f4c4-e860-43d4-85be-deddd7b2da90.jpg?im_w=1440);
+    /* ให้ขนาดภาพ cover เต็มพื้นที่  */
+    background-size: cover;
+    /* เลือกตำแหน่งโชว์ของภาพ: center */
+    background-position: center;
+
+    padding: 0 80px;
+
+
+}
+
+/* แบ่ง content ใน header ออกเป็น Block */
+#block1 {
+    /* background-color: aqua; */
+    height: 80px;
+
+    display: flex;
+}
+
+.logo {
+    flex: 1;
+    /* background-color: tomato; */
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo>a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-home {
+    flex: 1;
+    /* background-color: violet; */
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.nav-home>a {
+    color: #FFFFFF;
+    font-size: 18px;
+    text-decoration: none;
+
+    padding: 10px;
+}
+
+.nav-home>a:hover {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.nav-host {
+    flex: 1;
+    /* background-color: yellow; */
+    height: 100%;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-host>a:hover {
+    background-color: #bdbaba;
+}
+
+.nav-host>button {
+    width: 77px;
+    height: 42px;
+    border-radius: 42px;
+    border: none;
+    background-color: #f0f0f0;
+    padding: 1px 6px;
+    cursor: pointer;
+}
+
+
+
+#block2 {
+    /* background-color: rgba(218, 218, 218, 0.25); */
+    height: 66px;
+}
+
+.input-search {
+    /* นี่คือ div ลูกของ Block2 */
+    height: 66px;
+    width: 850px;
+
+    background-color: #FFFFFF;
+    border-radius: 110px;
+
+    /* จัดให้อยู่ตรงกลางของ Block Parent */
+    margin: auto;
+
+    /* ให้ element ภายในเรียงแบบ Flex */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+}
+
+.border-hover {
+    width: 250px;
+    height: 58px;
+    border: none;
+    border-radius: 58px;
+    /* background-color: #dadada; */
+
+
+    display: flex;
+    align-items: center;
+}
+
+.border-hover:hover {
+    background-color: #dadada;
+    cursor: pointer;
+}
+
+.location {
+    width: 100%;
+    height: 38.67px;
+
+    border-right: 1px solid #dadada;
+    padding: 0 38px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.location:hover {
+    border: none;
+}
+
+.border-hover2 {
+    width: 190px;
+    height: 58px;
+    border: none;
+    border-radius: 58px;
+    /* background-color: yellowgreen; */
+
+
+    display: flex;
+    align-items: center;
+}
+
+.border-hover2:hover {
+    background-color: #dadada;
+    cursor: pointer;
+}
+
+.check-in {
+    /* background-color: yellowgreen; */
+    height: 38.67px;
+
+    border-right: 1px solid #dadada;
+    padding: 0 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.guests {
+    /* background-color: yellowgreen; */
+    height: 38.67px;
+
+    padding: 0 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    /* background-color: yellow; */
+}
+
+.border-Guests {
+    width: 160px;
+    height: 58px;
+    border: none;
+    border-radius: 58px;
+    /* background-color: yellowgreen; */
+
+
+    display: flex;
+    align-items: center;
+}
+
+.border-Guests:hover {
+    background-color: #dadada;
+    cursor: pointer;
+}
+
+.input-search>button {
+    margin: 10px;
+    background-color: #FA215B;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-search>button:hover {
+    background-color: #d61f50;
+    cursor: pointer;
+}
+
+#block3 {
+    /* background-color: greenyellow; */
+    width: 602px;
+    height: 625px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.plan {
+    color: #FFFFFF;
+    font-size: 58px;
+    font-weight: bold;
+}
+
+#block3>button {
+    margin: 15px 0;
+    width: 155px;
+    height: 32px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section {
+    height: 184.67px;
+    /* background-color: #d61f50; */
+
+    margin: 50px 0;
+    padding: 0 80px;
+}
+
+.ulists {
+    /* background-color: yellow; */
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.part1 {
+    flex: 1;
+    /* background-color: violet; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+.part2 {
+    flex: 1;
+    /* background-color: aqua; */
+}
+
+.part3 {
+    flex: 1;
+    /* background-color: yellow; */
+}
+
+.part4 {
+    flex: 1;
+    /* background-color: yellowgreen; */
+}
+
+.list {
+    display: flex;
+
+    height: 50%;
+    width: 100%;
+    text-decoration: none;
+    color: #000000;
+}
+
+.text-list {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 13px;
+    margin-top: 15px;
+}
+
+.accomodations {
+    padding: 0 80px;
+    margin: 50px 0;
+
+    /* background-color: yellowgreen; */
+
+
+}
+
+.font32 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.quarter {
+    width: 25%;
+    padding-right: 13px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+.quarter>li>img {
+    border-radius: 10px;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+    padding: 50px 80px;
+
+
+
+
+
+
+}
+
+.item {
+    display: flex;
+
+    flex-wrap: wrap;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.third {
+    width: 33.33%;
+    padding-right: 13px;
+    box-sizing: border-box;
+}
+
+.font18 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.font14 {
+    font-size: 14px;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.ul1 {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.a-style {
+    width: 33.33%;
+    padding-right: 13px;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer {
+    padding: 0 80px;
+    background-color: #F7F7F7;
+    border-top: 1px solid #DDDDDD;
+}
+
+.f1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.f1>ul {
+    padding: 0;
+
+    width: 25%;
+    padding-right: 13px;
+    box-sizing: border-box;
+}
+
+footer ul>li {
+    font-size: 14px;
+    margin-top: 10px
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+u {
+    font-weight: bold;
+}
